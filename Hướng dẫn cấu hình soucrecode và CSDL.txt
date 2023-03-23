@@ -1,0 +1,17 @@
+=>>  Cấu hình CSDL: kiểm tra file connect.php  <<=
+
+- Giải nén file và vào thư mục theo dường dẫn sau:web_KTX/admin
+
+=>>>>Cấu hình file khi chạy trên localhost:
+    <?php
+    $mysqli= new mysqli("localhost", "root", "","web_ktx");
+      if($mysqli->connect_errno){
+	  echo'Kết nối MYSQL lỗi!'.$mysqli->connect_errno;
+	  exit();
+      }
+    ?>
+
+=>>  Cấu hình soucrecode: giải nén file và chạy bình thường  <<=
+
+  
+ 
